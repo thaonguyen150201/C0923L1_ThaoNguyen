@@ -3,12 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-</head>
+    </head>
 <body>
 <h1>Market Research Survey</h1>
 <p>Please take a few moments to complete this satisfacation survey</p>
-<br>
-<h2>What is your age</h2>
-<br>
+<p><b>What is your age range?</b></p>
+    <select name="age" style="width: 300px">
+        <option value="18-24">18-24</option>
+        <option value="25-30">25-30</option>
+        <option value="30-35">30-35</option>
+        <option value="50+">50+</option>
+    </select>
+<p><b>What is your yearly income range?</b></p>
+    <select name="income" style="width: 300px">
+        <option value="$0-$25,000">$0-$25,000</option>
+        <option value="$25,001-$50,000">$25,001-$50,000</option>
+        <option value="$50,001-$100,000">50,001-$100,000</option>
+        <option value="$100,000+">$100,000+</option>
+    </select>
+<p><b>Gender Identity</b></p>
+    <p><input type="radio" name="gender">Male</p>
+    <p><input type="radio" name="gender">Female</p>
+    <p><input type="radio" name="gender">Nonbinary</p>
+<p><b>Which of the following products have your purchased in the last 2 months.
+    Please check all that apply.</b></p>
+    <input type="checkbox"> Product 1
+    <br>
+    <input type="checkbox"> Product 2
+    <br>
+    <input type="checkbox"> Product 3
+    <br>
+<p><b>How often would you use our new product?</b></p>
+    <p><input type="radio" name="times">Daily</p>
+    <p><input type="radio" name="times">Weekly</p>
+    <p><input type="radio" name="times">Monthly</p>
+<table>
+    <tr>
+        <th>What would you pay for the neww product?</th>
+    </tr>
+    <tr>
+        <td >$ <input type="text"></td>
+        <td>. <input type="text"></td>
+    </tr>
+    <tr>
+        <td> Dollars</td>
+        <td> Cents </td>
+    </tr>
+</table>
+<p><b>What features would you like to see in new product</b></p>
+    <textarea></textarea>
+<p><b>Please rate your level of agreement with the following statemnets</b></p>
+<table style="border-collapse: collapse"; border="1px">
+    <tr style="background-color: blanchedalmond">
+        <th></th>
+        <th style="text-align: left" >Stongly Disagree</th>
+        <th>Disagree</th>
+        <th>Agree</th>
+        <th>Strongly Agree</th>
+    </tr>
+    <tr>
+        <th style="text-align: left">Our products are priced fairly</th>
+        <td style="text-align: center"><input type="radio" > <br/>1 </td>
+        <td style="text-align: center"><input type="radio" > <br/>2 </td>
+        <td style="text-align: center"><input type="radio" > <br/>3 </td>
+        <td style="text-align: center"><input type="radio" > <br/>4 </td>
+    </tr>
+    <tr style="background-color: blanchedalmond">
+        <th style="text-align: left">Our products are high quality</th>
+        <td style="text-align: center"><input type="radio" > <br/>1 </td>
+        <td style="text-align: center"><input type="radio" > <br/>2 </td>
+        <td style="text-align: center"><input type="radio" > <br/>3 </td>
+        <td style="text-align: center"><input type="radio" > <br/>4 </td>
+    </tr>
+    <tr>
+        <th>You would recommend our product to a friend or coworker</th>
+        <td style="text-align: center"><input type="radio" > <br/>1 </td>
+        <td style="text-align: center"><input type="radio" > <br/>2 </td>
+        <td style="text-align: center"><input type="radio" > <br/>3 </td>
+        <td style="text-align: center"><input type="radio" > <br/>4 </td>
+    </tr>
+</table>
 </body>
 </html>
