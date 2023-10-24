@@ -12,13 +12,24 @@
        <th>To Currency</th>
    </tr>
     <tr>
-        <td><input type="text"></td>
-        <td><input type="text"></td>
-        <td><input type="text"></td>
-        <td></td>
+        <td><input type="text" id="amount"></td>
+        <td>
+            <select id="from">
+            <option>VND</option>
+            <OPTION>USD</OPTION>
+             </select>
+        </td>
+        <td>
+            <select id="to">
+            <option>USD</option>
+            <OPTION>VND</OPTION>
+            </select>
+        </td>
+        <td><button onclick="doiTien">Convert</button></td>
     </tr>
-
 </table>
-
+<br>
+<p>result</p>
+<script src="baitap2.js"></script>
 </body>
 </html>
