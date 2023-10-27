@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html>
 <body>
-
-<h1>The Document Object</h1>
-<h2>The getElementById() Method</h2>
-
-<p id="demo"></p>
-
+<form>
+    <h1>Caculator</h1>
+    <table>
+        <tr>
+            <td><input type="number" id="firstNumber"></td>
+            <td><input type="number" id="secondNumber"></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td><button onclick="Addition">Addition(+)</button></td>
+            <td><button onclick="Subtraction">Subtraction(-)</button></td>
+            <td><button onclick="Multiplication">Multiplication(x)</button></td>
+            <td><button onclick="Division">Division(/)</button></td>
+        </tr>
+    </table>
+    <h2 id="result"> result:</h2>
+</form>
 <script>
-    document.getElementById("demo").innerHTML = "Hello World";
+    function addition() {
+        let firstNumber=document.getElementById('firstNumber').value
+        let secondNumber=document.getElementById('secondNumber').value
+        let result=firstNumber+secondNumber
+        document.getElementById(result).innerHTML=result
+    }
 </script>
-
 </body>
 </html>
