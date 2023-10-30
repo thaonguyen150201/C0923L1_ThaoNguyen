@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <h1>Tính chỉ số cân nặng</h1>
+    <table>
+        <tr>
+            <td > Nhập cân nặng (kg):</td>
+            <td><input id="canNang" type="text"></td>
+        </tr>
+        <tr>
+            <td > Nhập chiều cao (m):</td>
+            <td><input id="chieuCao" type="text"></td>
+        </tr>
+    </table>
+    <p>
+        <button onclick="kiemTra()">Kiểm tra</button>
+    </p>
+</form>
+<script>
+    function kiemTra() {
+        let canNang = +document.getElementById('canNang').value
+        let chieuCao = +document.getElementById('chieuCao').value
+        let BMI = canNang / (chieuCao * 2)
+        let result
+        if (BMI < 18) {
+            document.write("Underweight");
+        } else if (BMI < 25.0) {
+            document.write("Normal")
+        } else if (BMI < 30.0) {
+            document.write("Overweight")
+        } else {
+            document.write("Obese")
+        }
+    }
+
+</script>
+</body>
+</html>
