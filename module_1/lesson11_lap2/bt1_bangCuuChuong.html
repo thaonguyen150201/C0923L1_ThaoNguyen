@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="root"></div>
+<script>
+    let dataTable = `<table border="1">`
+    for (let i = 1; i <= 10; i++) {
+        dataTable += `<tr>`
+        for (let j = 1; j <= 10; j++) {
+            dataTable += `<td>${j} * ${i} = ${i * j}</td>`;
+        }
+        dataTable += `</tr>`
+    }
+    dataTable += `</table>`;
+    document.getElementById("root").innerHTML = dataTable;
+    // let bangCuuChuong;
+    // bangCuuChuong =
+    //     "<table width='40%' border='1' cellspacing = '1' cellpadding = '5px'>";
+    // for (let i = 2; i < 10; i++) {
+    //     bangCuuChuong = bangCuuChuong + "<tr>";
+    //     for (let j = 2; j < 10; j++) {
+    //         bangCuuChuong =
+    //             bangCuuChuong + "<td>" + j + "x" + i + "=" + i * j + "</td>";
+    //     }
+    //     bangCuuChuong = bangCuuChuong + "</tr>";
+    // }
+    // bangCuuChuong = bangCuuChuong + "</table>";
+    // document.write(bangCuuChuong);
+</script>
+</body>
+</html>

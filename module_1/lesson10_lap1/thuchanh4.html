@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="root"> </div>
+<script>
+    let bang=`<table border="1">`
+    for(let i=1;i<=10;i++){
+        bang +=`<tr>`
+        for (let j=1; j<=10; j++){
+            bang += `<td>${i*j}</td>`
+        }
+        bang+=`</tr>`
+    }
+    bang += `</table>`
+    document.getElementById('root').innerHTML=bang
+</script>
+</body>
+</html>
