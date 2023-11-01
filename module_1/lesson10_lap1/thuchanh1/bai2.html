@@ -6,12 +6,12 @@
 </head>
 <body>
 <script>
-    let num= prompt('Mời ban nhập số vào')
+    let num= +prompt('Mời ban nhập số vào')
     let total=0
-    for (let i=1;i<=num;i+=1){
-        total +=i;
-        document.write(total)
+    for (let i=1;i<=num;i++){
+        total = total+i;
     }
+    document.write(total)
 </script>
 </body>
 </html>

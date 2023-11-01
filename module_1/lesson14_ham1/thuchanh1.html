@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let xacNhan = confirm("Shall we play a game?");
+    let traLoi = processConfirm(xacNhan);
+    alert(traLoi);
+    function processConfirm(traLoi) {
+        if (traLoi) {
+           alert("Excellent. We'll play a nice game of chess");
+        } else {
+            alert("Maybe later then");
+        }
+        return
+    }
+</script>
+
+</body>
+</html>
